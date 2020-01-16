@@ -24,7 +24,7 @@ public class MetodoUsuario {
 
     public void guardarArchivoUsuario(Usuario usuario){
         try {
-            FileWriter fw = new FileWriter (".\\Usuario.txt", true);
+            FileWriter fw = new FileWriter ("D:\\ProyectVentaBoletos\\usuario.txt", true);
             BufferedWriter bw = new BufferedWriter(fw);
             PrintWriter pw = new PrintWriter(bw);
             pw.print(usuario.getId_usuario());
@@ -48,7 +48,7 @@ public class MetodoUsuario {
         //Crear vector con nombre apellido pasajero cedula edad
         DefaultTableModel mdlTablaU = new DefaultTableModel(cabeceras,0);
         try {
-            FileReader fr = new FileReader(".\\Usuario.txt");
+            FileReader fr = new FileReader("D:\\ProyectVentaBoletos\\usuario.txt");
             BufferedReader br = new BufferedReader(fr);
             String d;
             while ((d=br.readLine())!=null){
@@ -67,7 +67,7 @@ public class MetodoUsuario {
    
     public Vector BuscarUsuario(String unIdUser){
         try {
-            FileReader fr = new FileReader(".\\Usuario.txt");
+            FileReader fr = new FileReader("D:\\ProyectVentaBoletos\\usuario.txt");
             BufferedReader br = new BufferedReader(fr);
             String d;
             while ((d=br.readLine())!=null){

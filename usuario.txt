@@ -1,3 +1,4 @@
 10|jjjj|jjjj|mpabad|kjkjkj
 10|jjjj|jjjj|mpabad|1234
 11|Juan|Perez|usuario1|1234
+1|Joe|Ontaneda|admin|1234

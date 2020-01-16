@@ -1,0 +1,3 @@
+Juan |Perez|normal|706865206|25
+Esteban|Perez|adulto|1766889946|65
+JOE|ONTANEDA|NORMAL|1713153516|41
